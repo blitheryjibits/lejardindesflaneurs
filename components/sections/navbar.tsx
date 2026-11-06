@@ -5,8 +5,6 @@ import Image from "next/image";
 import { HamburgerMenu } from "@/assets/icons/hamburger";
 import { useState } from "react";
 import { TextLogo } from "../text-logo";
-import { FlowerBed } from "../../assets/flowers/flower-bed";
-import { FlowerAndLeaves } from "@/assets/flowers/flower-and-leaves";
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -38,9 +36,7 @@ export const Navbar = () => {
               <TextLogo isLink={true} />
             </div>
           </Link>
-          <div className="absolute top-5 left-130 w-64 cursor-events-none">
-            <FlowerAndLeaves />
-          </div>
+          <div className="absolute top-5 left-130 w-64 cursor-events-none"></div>
 
           {/* Hamburger */}
           <HamburgerMenu
@@ -67,9 +63,6 @@ export const Navbar = () => {
               <Link className="" href={item.href}>
                 {item.label}
               </Link>
-              {/*<div className="absolute top-0 w-16 cursor-events-none">
-                <FlowerAndLeaves />
-              </div>*/}
             </li>
           ))}
         </ul>
